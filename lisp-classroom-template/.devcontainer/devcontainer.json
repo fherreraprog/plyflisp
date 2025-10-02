@@ -1,0 +1,21 @@
+{
+  "name": "Common Lisp Classroom Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ailisp.lisp", 
+        "ms-vscode.makefile-tools"
+      ],
+      "settings": {
+        "lisp.interpreter.sbclPath": "/usr/bin/sbcl",
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+      }
+    }
+  },
+  "forwardPorts": [4000],
+  "postCreateCommand": "sbcl --version && echo 'Common Lisp environment ready!'"
+}
