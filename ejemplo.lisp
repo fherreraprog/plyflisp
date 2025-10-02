@@ -1,6 +1,6 @@
 ;; Ejemplo básico de Common Lisp para estudiantes
 
-;; Definir una función simple
+;; Definir una función simple un cambio 
 (defun saludar (nombre)
   (format t "¡Hola, ~a! Bienvenido a Programación Lógica y Funcional.~%" nombre))
 
